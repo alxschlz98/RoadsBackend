@@ -24,7 +24,7 @@ router.register(r'roads', views.RoadViewSet)
 router.register(r'points', views.PointViewSet)
 
 urlpatterns = [
-    path('roadAPI/', include("RoadAPI.urls")),
-    # path('', include(router.urls)),
+    # path('roadAPI/', include("RoadAPI.urls")),
+    path('', include(router.urls)),
     path('admin/', admin.site.urls),
 ]
